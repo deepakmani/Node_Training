@@ -1,13 +1,13 @@
 
-module.exports = function() {
+module.exports = function(day) {
 	var User = { 
 	                name: 			"Deepak", 
 	 			    Username: 	 	"DeepakABS", 
 	                Email_id: 	 	"deepakabs@abs.com", 
 	                location: 		"India",
-	                search_keywords: ["reactsj beginners", "nigeria, bootcamp", "nigeria bootcamp"]
-	                get_search_keywords: get_search_keywords
-	             
+	                search_keywords: ["reactsj beginners", "nigeria, bootcamp", "nigeria bootcamp"],
+	                get_search_keywords: get_search_keywords,
+	             	lastLogin: 		day
 	            };
 
 	// Dot notation
@@ -19,6 +19,7 @@ module.exports = function() {
 
 	function foo(name, username, email) {
 		//
+		return value;
 
 	}
 
@@ -37,8 +38,10 @@ module.exports = function() {
 	};
 
 
-	function get_search_keywords(search_keywords) {
-		
+	
+
+	function get_search_keywords(user) {
+
 	}
 
 	console.log("", get_search_keywords )
